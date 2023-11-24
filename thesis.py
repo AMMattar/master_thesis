@@ -17,7 +17,7 @@ first_year = df1.copy()
 first_year['Date'] = df1['Date'].dt.year
 first_year['month'] = df1['Date'].dt.month
 
-years = [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012]
+years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
 
 df2 = {}
 
@@ -85,5 +85,6 @@ df2 = pd.DataFrame(df2)
 # print(df2)
 df2.T.to_csv('data.csv', index=False, encoding='utf-8')
 #df2
+
 
 # =ARRAYFORMULA(SEQUENCE(12 (how many cells),1 (number of Columns),100 (the number that will be written),1 (the difference betwwen the sequence)))
